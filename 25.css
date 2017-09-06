@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+
+	background:white;
+	font-family: sans-serif;
+}
+
+h1{
+	font-size: 6em;
+	float: right;
+	font-weight: 200;
+	text-decoration-line: underline;
+}
