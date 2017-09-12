@@ -1,0 +1,845 @@
+body{
+  background-color: #FCEADE;
+}
+
+
+.container {
+margin: 130px;
+display: block;
+text-align: center;
+}
+
+
+
+.item {
+  height: 100px;
+  width: 100px;
+  left:0px;
+  background: #25CED1;
+  color: white;
+  margin: 40px;
+  border: 0;
+  font-size: 30px;
+  margin:20px;
+  float:left;
+
+}
+
+h1{
+  font-size: 30px;
+  background-color:#FF8A5B;
+  color: #FCEADE;
+  margin-top:-100px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+
+/* comment out 'float: left;' to have items stack in a single column */
+
+
+    #button1:hover {
+    	transform: scale(0.8);
+
+    }
+
+    #button1:active {
+    	background: #EA526F;
+    	opacity: 1;
+    }
+
+    #button2{
+  transition: 2s ease-out;
+}
+    #button2:hover{
+      width: 30%;
+      transition: 2s;
+    }
+
+
+    #button3:hover {
+    	transform: scale(0.7);
+      -moz-border-radius:50px;
+      -webkit-border-radius:50px;
+      background:#FFFFFF;
+    }
+
+    #button3:hover::after {
+      text-align: center;
+
+    }
+
+    #button3:active {
+    	background: #EA526F;
+    	opacity: 1;
+    }
+
+    #button4:hover {
+        -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: example1;
+        animation-duration: 4s;
+    }
+    @keyframes example1 {
+    0%   {background-color: #25CED1;}
+    25%  {background-color: #EA526F;}
+    50%  {background-color: #FFFFFF;}
+    75%   {background-color:#FCEADE;}
+    100% {background-color: #FF8A5B;}
+}
+
+
+    #button5:hover{
+      background:#FFFFFF;
+      border:0;
+    	opacity: 1;
+      transition: all 1s ease-out;
+
+    }
+
+    #button5:active {
+    	background: #25CED1;
+      transform: scale(0.4);
+      transition: all 1s ease-out;
+      border-radius: 50%;
+      color: yellow;
+    }
+
+
+    #button6{
+      transition: all 0.3s ease-out;
+}
+
+
+      #button6:hover {
+        background: #EA526F;
+        transition: all 1s ease-out;
+        height: 200px;
+        width:250px;
+
+
+
+}
+
+  #button7:hover {
+  box-shadow: inset 0 0 0 30px #FF8A5B;
+  transition: all 0.3s ease 0s;
+}
+
+
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-150px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-150px)
+		           rotate(-360deg);
+	}
+}
+
+#button8:hover {
+	animation: rot 3s infinite linear;
+}
+
+#button9 {
+  transition:all 2s ease-out;
+}
+
+#button9:hover{
+ height: 100px;
+ width: 100px;
+ background: linear-gradient(to left, #FF8A5B 50%, #FFFFFF 50%);
+ background: linear-gradient(to right, #FF8A5B 50%, #FFFFFF 50%);
+ background-size: 200% 100%;
+ background-position: right bottom;
+ transition: all 2s ease-out;
+ }
+
+
+
+#button10:hover{
+   -webkit-animation: xAxis 2s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+   animation: xAxis 2s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+   transition: all 2s ease-out;
+ }
+
+#button10:hover {
+   width: 100px;
+   height: 100px;
+   background-color: #EA526F;
+   -webkit-animation: yAxis 2s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+   animation: yAxis 2s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64)ease-out ;
+ }
+
+ @-webkit-keyframes yAxis {
+   50% {
+     -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+     -webkit-transform: translateY(-100px);
+     transform: translateY(-100px)ease-out ;
+   }
+ }
+
+ @keyframes yAxis {
+   50% {
+     -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+     -webkit-transform: translateY(-100px);
+     transform: translateY(-100px);
+   }
+ }
+
+ @-webkit-keyframes xAxis {
+   50% {
+     -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+     -webkit-transform: translateX(100px);
+     transform: translateX(100px);
+   }
+ }
+
+ @keyframes xAxis {
+   50% {
+     -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+     -webkit-transform: translateX(100px);
+     transform: translateX(100px);
+   }
+ }
+
+
+
+
+    #button11{
+      transition: 2s ease;
+    }
+
+    #button11:hover{
+      height:10px;
+      transition: 2s ease-out;
+
+    }
+
+    #button12{
+      transition: 2s ease;
+    }
+
+    #button12:hover{
+      height:10px;
+      width: 29px;
+      transition: 1s ease-out;
+
+    }
+
+    #button13{
+      transition: 1s ease;
+    }
+
+    #button13:hover{
+      height:250px;
+      width: 250px;
+      transition: 1s ease-out;
+      border-radius: 50%;
+      background: #FF8A5B;
+
+    }
+#button14{
+    -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+#button14:hover {
+  background-color: #EA526F;
+  cursor: pointer;
+}
+
+#button15{
+  transition: 1s ease;
+  }
+
+  #button15:hover{
+  -webkit-transform: scale(30);
+  -ms-transform: scale(30);
+  transform: scale(30);
+  transition: 1s ease-out;
+  background-color: #25CED1;
+  }
+
+  #button16 {
+transition: 1s ease;
+}
+
+  #button16:hover{
+-webkit-transform: scale(0.1);
+-ms-transform: scale(0.1);
+transform: scale(0.1);
+transition: 1s ease;
+background-color: #FF8A5B;
+
+}
+
+#button17{
+transition: .5s ease;
+}
+
+#button17:hover{
+box-shadow:
+1px 1px #EA526F,
+2px 2px #EA526F,
+3px 3px #EA526F,
+4px 4px #EA526F,
+5px 5px #EA526F,
+6px 6px #EA526F;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+}
+
+
+#button18{
+transition: 1s ease;
+}
+
+#button18:hover {
+-webkit-filter: blur(5px);
+transition: 1s ease;
+}
+
+#button19 {
+transition: .5s ease;
+}
+
+#button19:hover{
+box-shadow: 0 0 0 30px #FFFFFF;
+border-radius: 50%;
+transition: .5s ease;
+}
+
+#button20{
+  transform: scaleX(1);
+  transition:transform 0.5s ease-out;
+}
+#button20:hover{
+  transform: scaleX(2);
+}
+
+#button20:hover{
+  transform: scaleX(2);
+}
+
+#button21{
+transform: scaleY(1);
+transition: transform 0.5s ease;
+}
+
+#button21:hover{
+transform: scaleY(2);
+}
+
+#button22{
+transform: scale(1, 1);
+transition: transform 0.5s ease;
+}
+
+
+#button22:hover{
+transform: scale(1.5, 1.5);
+}
+
+#button23:hover {
+   transform: translateX(200px);
+}
+
+#button23 {
+  @extend .circle;
+   transition: all 1.5s cubic-bezier(0,1,.98,0);
+}
+#button23 {
+  transition: all 3s ease-in-out;
+}
+
+#button24{
+  transform: translateY(1);
+  transition: transform 0.5s ease;
+}
+
+
+#button24:hover {
+  transform: translateY(2em);
+}
+
+#button25 {
+  transform-origin: left top;
+  transition: transform 1s;
+}
+
+#button25:hover {
+  transform: rotate(720deg);
+}
+
+
+
+
+.item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.item .popuptext {
+    visibility: hidden;
+    width: 160px;
+    height: 40px;
+    background-color: #FF8A5B;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* Popup arrow */
+.item .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FF8A5B transparent transparent transparent;
+}
+/* Toggle this class - hide and show the popup */
+.item .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+
+#button27{
+  transform: rotate(0);
+  transition: transform 0.5s ease-out;
+}
+
+#button27:hover{
+    transform: rotate(270deg); /* Standard syntax */
+    transition: transform 0.5s ease-out;
+    background-color: #FFFFFF;
+}
+
+
+#button28{
+  transform: skew(1, 1);
+  transition: transform 0.5s ease-out;
+}
+
+#button28:hover{
+    transform: skew(30deg, 20deg);
+    border-radius: 30%;
+ /* Standard syntax */
+}
+
+
+/* Hide default HTML checkbox */
+.item input {display:none;}
+
+/* The slider */
+.button29 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #25CED1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.button29:before {
+  position: absolute;
+  content: "";
+  height: 90px;
+  width: 30px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #FCEADE;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .button29 {
+  background-color: #EA526F;
+}
+
+input:focus + .button29 {
+  box-shadow: 0 0 1px #EA526F;
+}
+
+input:checked + .button29:before {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+}
+
+
+#button30 {
+  height: 100px;
+  width: 100px;
+  background: #25CED1;
+  color: white;
+  margin: 40px;
+  border: 0;
+  font-size: 30px;
+  margin:20px;
+  float:left;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #EA526F;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px #FF8A5B;
+    padding: 12px 16px;
+    color: #FF8A5B;
+
+}
+
+#button30:active .dropdown-content{
+    display: block;
+  }
+
+
+#button31{
+  transform: matrix3d(1);
+  transition: transform 0.5s ease;
+}
+
+#button31:hover{
+transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1)
+ /* Standard syntax */
+}
+
+#button32{
+  transform: translate3d(2px, 2px, -5);
+  transition: transform 0.5s ease;
+}
+
+#button32:hover{
+  transform: translate3d(2px, 2px, 80px) rotate3d(3, 2, 2, 270deg);
+ /* Standard syntax */
+}
+
+#button33{
+  transform: perspective(1) scaleZ(1) rotateY(0deg);
+  transition: transform 0.5s ease;
+/*   perspective: 300px; */
+/*   transform-style: preserve-3d; */
+}
+
+#button33:hover{
+/*   transform: translate3d(42px, 42px, 42px); */
+  transform: perspective(500px) scaleZ(2) rotateY(150deg);
+  background-color: #FF8A5B;
+ /* Standard syntax */
+}
+
+#button34{
+/*   perspective: 100px; */
+  transform: perspective(1) scaleZ(1) rotateX(0deg);
+  transition: transform 0.5s ease;
+}
+
+#button34:hover{
+  transform: perspective(500px) scaleZ(2) rotateX(45deg);
+ /* Standard syntax */
+}
+#button35{
+  transform: translateZ(1px);
+  transition: transform 0.5s ease;
+}
+
+#button35:hover{
+
+  transform: rotate3d(3, 2, 2, 270deg) translateZ(150px);
+ /* Standard syntax */
+}
+#button36{
+transition: 1s ease;
+}
+
+#button36:hover {
+border-radius:50%;
+transition: 1s ease;
+}
+
+#button37{
+  	position: relative;
+  	box-sizing: border-box;
+  	transition: all 600ms ease;
+  }
+
+#button37:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 100px;
+	background: orange;
+	transition: all 1s ease;
+}
+
+#button37:hover:before {
+	width: 110%;
+}
+
+
+#button38{
+  	position: relative;
+  	box-sizing: border-box;
+  	transition: all 500ms ease;
+  }
+
+  #button38:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	background: pink;
+ 	transition: all 1s ease;
+}
+
+#button38:hover:before {
+	height: 42px;
+}
+
+#button39:hover {
+	background: rgba(0,0,0,0);
+	color: #FFFFFF;
+	box-shadow: inset 0 0 0 8px #EA526F;
+}
+
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+#button40{
+    transition: all 0.1s ease-out;
+}
+
+
+#button40:hover {
+	animation: bounce 1s;
+  background-color: #FF8A5B;
+  transition: all 0.1s ease-out;
+}
+
+#button41 {
+  transition: all 1s ease-out;
+}
+
+#button41:hover {
+transform: skew(-10deg);
+transition: all 1s ease-out;
+}
+
+#button42:hover {
+	border: 4px dotted #F42B03;
+}
+
+#button43 {
+  position: relative;
+}
+#button43:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 10px;
+  background-color: #EC5766;
+  content: "";
+  transition: width 0.5s;
+}
+#button43:hover:after {
+  width: 150%;
+}
+
+#button44{
+  transition: all 1s ease-out;
+}
+
+#button44:hover {
+    transform: rotate(90deg) scale(1.75) translateX(50px);
+  }
+}
+
+
+#button45 {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 2 15px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+#button45:active {
+  box-shadow: 0 0 9px  #FF8A5B;
+  transform: translateY(3px);
+}
+
+
+
+
+#button46:hover {
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+
+@keyframes example {
+    0%   {background-color:#25CED1; left:0px; top:0px;}
+    25%  {background-color:#FFFFFF; left:200px; top:-300px; }
+    50%  {background-color:#FF8A5B; left:400px; top:200px;}
+    75%  {background-color:#EA526F; left:0px; top:200px;}
+    100% {background-color:#FCEADE; left:0px; top:0px;}
+}
+
+
+#button47{
+  transition: all 1s ease-out;
+}
+
+#button47:hover {
+width: 210px;
+transform: rotate(3770deg);
+transition: all 2s ease-out;
+left: 481.75px;
+height: 300px;
+opacity: 0.8;
+background-color:#EA526F
+}
+
+
+#button48:hover{
+  animation: shake 40ms 15 linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(10px, 0);
+  }
+  50% {
+    transform: translate(-10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+
+#button49:hover{
+  width:80px;
+  height: 80px;
+  border: 14px solid #FFFFFF;
+  border-right: 14px solid #EA526F;
+  border-bottom: 14px solid #FF8A5B;
+  border-radius: 50%;
+  border-top: 14px solid #FCEADE;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+
+.loader {
+ border-top: 14px solid blue;
+ border-right: 14px solid green;
+ border-bottom: 14px solid red;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#button50 {
+  background-color: #25CED1;
+  font-size: 150px;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  margin-left:240px;
+  margin-top:-180px;
+  shape-inside: polygon(250px 0, 500px 0, 500px 180px, 500px 320px, 500px 500px, 250px 500px, 0 500px, 0 320px, 0 180px, 0 0);
+ -webkit-clip-path: polygon(250px 0, 500px 0, 500px 180px, 500px 320px, 500px 500px, 250px 500px, 0 500px, 0 320px, 0 180px, 0 0);
+   shape-padding: 10px;
+  transition: all 3s ease;
+  transform: scale(0.2);
+}
+#button50:hover{
+  shape-inside: polygon(250px 0, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );
+  -webkit-clip-path: polygon(250px 0, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );
+  transform: scale(0.2);
+  background-color: #FF8A5B;
+}
