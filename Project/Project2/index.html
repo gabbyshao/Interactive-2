@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>  </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script>
+	// alert("test");
+	$(document).ready(function(){
+			// toggle class to animate rotation
+			$('.rotator').mouseenter(function() {
+				$(this).find(".bar").css({'transform': "rotate(5000deg)"});
+					// $("#Abar").toggleClass("rotate");
+
+			});
+
+			$('.rotator').mouseleave(function() {
+				$(this).find(".bar").css({'transform': "rotate(-2000deg)"});
+					// $("#Abar").toggleClass("rotate");
+
+			});
+
+			var audioElement = document.createElement('audio');
+								audioElement.setAttribute('src', 'AlbertAmmons.mp3');
+                $(".rotator").mouseenter(function(){
+                    audioElement.play();
+                    // alert("message?: DOMString");
+                });
+								$(".rotator").mouseleave(function(){
+                    audioElement.pause();
+                    // alert("message?: DOMString");
+                });
+
+
+
+
+
+
+
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class= "square">
+<div id="square"> </div>
+	</div>
+
+	  <div class="canvas1">
+			<!-- <div class="cassette">
+			<div class= "CC">
+				<div id="CbigCircle"> </div>
+				<div id="CsmallCircle"> </div>
+				<div id="Cspace"> </div>
+				<div id="Cbar" class="bar"> </div>
+			</div>
+
+			<div class="AA">
+				<div id="AbigCircle"> </div>
+				<div id="AsmallCircle"> </div>
+				<div id="Abar" class="bar"> </div>
+				<div id="Astem"> </div>
+				</div>
+
+				<div class= "SS">
+					<div id="SbigCircle" > </div>
+					<div id="SsmallCircle"> </div>
+					<div id="Sspace" class="bar"> </div>
+					<div id="Sbar" class="bar"> </div>
+				</div>
+
+				<div class= "SSS">
+					<div id="SbigCircle" > </div>
+					<div id="SsmallCircle"> </div>
+					<div id="Sspace" class="bar"> </div>
+					<div id="Sbar" class="bar"> </div>
+				</div>
+
+				<div class= "EE">
+					<div id="EbigCircle"> </div>
+					<div id="EsmallCircle"> </div>
+					<div id="Ebar" class="bar"> </div>
+					<div id="Espace" > </div>
+				</div>
+
+				<div class= "TT ">
+					<div id="TbigCircle"> </div>
+					<div id="TsmallCircle"> </div>
+					<div id="Tspace"> </div>
+					<div id="Tspace2"> </div>
+					<div id="Tstem"> </div>
+					<div id="Tbarv" class="bar"> </div>
+				</div>
+
+				<div class= "TTT ">
+					<div id="TbigCircle"> </div>
+					<div id="TsmallCircle"> </div>
+					<div id="Tspace"> </div>
+					<div id="Tspace2"> </div>
+					<div id="Tstem"> </div>
+					<div id="Tbarv" class="bar"> </div>
+				</div>
+
+				<div class= "EEE ">
+					<div id="EbigCircle"> </div>
+					<div id="EsmallCircle"> </div>
+					<div id="Ebar" class="bar"> </div>
+					<div id="Espace" > </div>
+				</div> -->
+
+
+
+
+
+	</div>
+
+	<div class="canvas2">
+
+		<div class="BB rotator">
+			<div id="BbigCircle"> </div>
+			<div id="BsmallCircle"> </div>
+			<div id="Bbar" class="bar"> </div>
+			<div id="Bstem"> </div>
+		</div>
+
+		<div class= "OO rotator">
+			<div id="ObigCircle"> </div>
+			<div id="OsmallCircle"> </div>
+			<div id="Obar" class="bar"> </div>
+		</div>
+
+		<div class= "OOO rotator">
+			<div id="ObigCircle"> </div>
+			<div id="OsmallCircle"> </div>
+			<div id="Obar" class="bar"> </div>
+		</div>
+
+		<div class= "GG rotator">
+			<div id="GbigCircle"> </div>
+			<div id="GsmallCircle"> </div>
+			<div id="Gbar" class="bar"> </div>
+			<div id="Gstem"> </div>
+			<div id="gbigCircle"> </div>
+			<div id="gsmallCircle"> </div>
+		</div>
+
+		<div class= "II rotator">
+			<div id="Ibarv"> </div>
+			<div id="Ibar" class="bar"> </div>
+
+		</div>
+
+		<div class= "EEEE rotator">
+			<div id="EbigCircle"> </div>
+			<div id="EsmallCircle"> </div>
+			<div id="Ebar" class="bar"> </div>
+			<div id="Espace" > </div>
+		</div>
+
+		<div class= "WW rotator">
+			<div id="Wbar"> </div>
+			<div id="WbarR" class="bar"> </div>
+			<div id="wbar"> </div>
+			<div id="wbarR" class="bar"> </div>
+		</div>
+
+		<div class= "OOOO rotator">
+			<div id="ObigCircle"> </div>
+			<div id="OsmallCircle"> </div>
+			<div id="Obar" class="bar"> </div>
+		</div>
+
+		<div class= "OOOOO rotator">
+			<div id="ObigCircle"> </div>
+			<div id="OsmallCircle"> </div>
+			<div id="Obar" class="bar"> </div>
+		</div>
+
+		<div class= "GGG rotator">
+			<div id="GbigCircle"> </div>
+			<div id="GsmallCircle"> </div>
+			<div id="Gbar" class="bar"> </div>
+			<div id="Gstem"> </div>
+			<div id="gbigCircle"> </div>
+			<div id="gsmallCircle"> </div>
+		</div>
+
+		<div class= "III rotator">
+			<div id="Ibarv"> </div>
+			<div id="Ibar" class="bar"> </div>
+
+		</div>
+
+		<div class= "EEEEE rotator">
+			<div id="EbigCircle"> </div>
+			<div id="EsmallCircle"> </div>
+			<div id="Ebar" class="bar"> </div>
+			<div id="Espace" > </div>
+		</div>
+			</div>
+
+		</div>
+		<div class="album1 rotator">
+		<img src="AlbumPhoto-01.png" class="bar" alt="Mountain View" width="100" height="100">
+	</div>
+
+	<div class="album2 rotator">
+	<img src="AlbumPhoto-01.png" class="bar" alt="Mountain View" width="100" height="100">
+</div>
+
+    <div class="canvas3">
+
+
+
+
+        <!-- put your objects here -->
+			<div class="A rotator">
+				  <div id="AbigCircle"> </div>
+					<div id="AsmallCircle"> </div>
+					<div id="Abar" class="bar"> </div>
+					<div id="Astem"> </div>
+
+				</div>
+
+				<div class="B rotator">
+					<div id="BbigCircle"> </div>
+					<div id="BsmallCircle"> </div>
+					<div id="Bbar" class="bar"> </div>
+					<div id="Bstem"> </div>
+				</div>
+
+				<div class= "C rotator">
+					<div id="CbigCircle"> </div>
+					<div id="CsmallCircle"> </div>
+					<div id="Cspace"> </div>
+					<div id="Cbar" class="bar"> </div>
+				</div>
+
+				<div class= "D rotator">
+					<div id="DbigCircle"> </div>
+					<div id="DsmallCircle"> </div>
+					<div id="Dbar" class="bar"> </div>
+					<div id="Dstem"> </div>
+				</div>
+
+				<div class= "E rotator">
+					<div id="EbigCircle"> </div>
+					<div id="EsmallCircle"> </div>
+					<div id="Ebar" class="bar"> </div>
+					<div id="Espace" > </div>
+				</div>
+
+				<div class= "F rotator">
+					<div id="FbigCircle"> </div>
+					<div id="FsmallCircle"> </div>
+					<div id="Fbar" > </div>
+					<div id="Fspace"> </div>
+					<div id="Fspacesmall"> </div>
+					<div id="Fbarv" class="bar"> </div>
+				</div>
+
+
+				<div class= "G rotator">
+					<div id="GbigCircle"> </div>
+					<div id="GsmallCircle"> </div>
+					<div id="Gbar" class="bar"> </div>
+					<div id="Gstem"> </div>
+					<div id="gbigCircle"> </div>
+					<div id="gsmallCircle"> </div>
+				</div>
+
+				<div class= "H rotator">
+					<div id="HbigCircle"> </div>
+					<div id="HsmallCircle"> </div>
+					<div id="Hstem"> </div>
+					<div id="Hstem2"> </div>
+					<div id="Hspace"> </div>
+					<div id="Hbar" class="bar"> </div>
+
+				</div>
+
+				<div class= "I rotator">
+					<div id="Ibarv"> </div>
+					<div id="Ibar" class="bar"> </div>
+
+				</div>
+
+				<div class= "J rotator">
+					<div id="Jbarv"> </div>
+					<div id="Jbar" class="bar"> </div>
+					<div id="JbigCircle"> </div>
+					<div id="JsmallCircle"> </div>
+				</div>
+
+				<div class= "K rotator">
+					<div id="Kbar" > </div>
+					<div id="Kbarv"> </div>
+					<div id="Kstem" class="bar"> </div>
+				</div>
+
+				<div class= "L rotator">
+					<div id="Lbar" > </div>
+					<div id="Lbarspace" class="bar"> </div>
+				</div>
+
+				<div class= "M rotator">
+					<div id="MbigCircle"> </div>
+					<div id="MsmallCircle"> </div>
+					<div id="Mstem"> </div>
+					<div id="Mstem2"> </div>
+					<div id="Mspace"> </div>
+					<div id="Mbar" class="bar"> </div>
+					<div id="mbigCircle"> </div>
+					<div id="msmallCircle"> </div>
+					<div id="mstem"> </div>
+					<div id="mstem2"> </div>
+					<div id="mspace"> </div>
+					<div id="mbar" class="bar"> </div>
+
+				</div>
+
+				<div class= "N rotator">
+					<div id="NbigCircle"> </div>
+					<div id="NsmallCircle"> </div>
+					<div id="Nstem"> </div>
+					<div id="Nstem2"> </div>
+					<div id="Nspace"> </div>
+					<div id="Nbar" class="bar"> </div>
+
+				</div>
+
+				<div class= "O rotator">
+					<div id="ObigCircle"> </div>
+					<div id="OsmallCircle"> </div>
+					<div id="Obar" class="bar"> </div>
+				</div>
+
+				<div class= "P rotator">
+					<div id="PbigCircle"> </div>
+					<div id="PsmallCircle"> </div>
+					<div id="Pbar" class="bar"> </div>
+					<div id="Pstem"> </div>
+				</div>
+
+				<div class= "Q rotator">
+					<div id="QbigCircle"> </div>
+					<div id="QsmallCircle"> </div>
+					<div id="Qbar" class="bar"> </div>
+					<div id="Qstem"> </div>
+				</div>
+
+				<div class= "R rotator">
+					<div id="RbigCircle"> </div>
+					<div id="RsmallCircle"> </div>
+					<div id="Rspace"> </div>
+					<div id="Rspace2" class="bar"> </div>
+					<div id="Rstem"> </div>
+				</div>
+
+				<div class= "S rotator">
+					<div id="SbigCircle" > </div>
+					<div id="SsmallCircle"> </div>
+					<div id="Sspace" class="bar"> </div>
+					<div id="Sbar" class="bar"> </div>
+				</div>
+
+				<div class= "T rotator">
+					<div id="TbigCircle"> </div>
+					<div id="TsmallCircle"> </div>
+					<div id="Tspace"> </div>
+					<div id="Tspace2"> </div>
+					<div id="Tstem"> </div>
+					<div id="Tbarv" class="bar"> </div>
+				</div>
+
+				<div class= "U rotator">
+					<div id="UbigCircle"> </div>
+					<div id="UsmallCircle"> </div>
+					<div id="Ustem"> </div>
+					<div id="Ustem2"> </div>
+					<div id="Uspace"> </div>
+					<div id="Ubar" class="bar"> </div>
+				</div>
+
+				<div class= "V rotator">
+					<div id="Vbar"> </div>
+					<div id="VbarR" class="bar"> </div>
+				</div>
+
+				<div class= "W rotator">
+					<div id="Wbar"> </div>
+					<div id="WbarR" class="bar"> </div>
+					<div id="wbar"> </div>
+					<div id="wbarR" class="bar"> </div>
+				</div>
+
+				<div class= "X rotator">
+
+					<div id="XbigCircle"> </div>
+					<div id="XsmallCircle"> </div>
+					<div id="Xspace"> </div>
+					<div id="xbigCircle"> </div>
+					<div id="xsmallCircle"> </div>
+  				<div id="xbar" class="bar"> </div>
+					<div id="xspace"> </div>
+				</div>
+
+				<div class= "Y rotator">
+					<div id="YbigCircle"> </div>
+					<div id="YsmallCircle"> </div>
+					<div id="Ystem"> </div>
+					<div id="ybigCircle"> </div>
+					<div id="ysmallCircle"> </div>
+					<div id="Yspace"> </div>
+					<div id="Ybar" class="bar"> </div>
+				</div>
+
+				<div class= "Z rotator">
+					<div id="ZbigCircle"> </div>
+					<div id="ZsmallCircle"> </div>
+					<div id="Zspace" class="bar"> </div>
+					<div id="Zbar" class="bar"> </div>
+				</div>
+
+			</div>
+
+			<div class="canvas4">
+
+				<div class= "one rotator">
+					<div id="onebar"> </div>
+					<div id="onebarspace" class="bar"> </div>
+				</div>
+
+				<div class= "two rotator">
+					<div id="twobigCircle"> </div>
+					<div id="twosmallCircle"> </div>
+					<div id="twospace"> </div>
+					<div id="twobar" class="bar"> </div>
+					<div id="twobartwo"> </div>
+					<div id="twobarV"> </div>
+				</div>
+
+				<div class= "three rotator">
+					<div id="threebigCircle"> </div>
+					<div id="threesmallCircle"> </div>
+					<div id="threebigCirclethree"> </div>
+					<div id="threesmallCirclethree"> </div>
+					<div id="threespace"> </div>
+					<div id="threebar" class="bar"> </div>
+				</div>
+
+				<div class= "four rotator">
+					<div id="fourbigCircle"> </div>
+					<div id="foursmallCircle"> </div>
+					<div id="fourspace" class="bar"> </div>
+					<div id="fourbar"> </div>
+				</div>
+
+				<div class= "five rotator">
+					<div id="fivebigCircle"> </div>
+					<div id="fivesmallCircle"> </div>
+					<div id="fivespace" class="bar"> </div>
+					<div id="fivespace2"> </div>
+					<div id="fivestem"> </div>
+					<div id="fivestem2"> </div>
+					<div id="fivebar" > </div>
+					<div id="fivebar2" class="bar"> </div>
+				</div>
+
+				<div class= "six rotator">
+					<div id="sixbigCirclesix"> </div>
+					<div id="sixsmallCirclesix"> </div>
+					<div id="sixspace"> </div>
+					<div id="sixbigCircle"> </div>
+					<div id="sixsmallCircle"> </div>
+					<div id="sixbar"class="bar"> </div>
+				</div>
+
+				<div class= "seven rotator">
+					<div id="seventop"> </div>
+					<div id="sevenstem"> </div>
+					<div id="sevenbar" class="bar"> </div>
+				</div>
+
+				<div class= "eight rotator">
+					<div id="eightbigCircle"> </div>
+					<div id="eightsmallCircle"> </div>
+					<div id="eightbar" class="bar"> </div>
+					<div id="eightbigCircleeight"> </div>
+					<div id="eightsmallCircleeight"> </div>
+					<div id="eightbareight" class="bar"> </div>
+				</div>
+
+				<div class= "nine rotator">
+					<div id="ninebigCirclenine"> </div>
+					<div id="ninesmallCirclenine"> </div>
+					<div id="ninespace"> </div>
+					<div id="ninebigCircle"> </div>
+					<div id="ninesmallCircle"> </div>
+					<div id="ninebar" class="bar"> </div>
+				</div>
+
+				<div class= "ten rotator">
+					<div id="tenbigCircle"> </div>
+					<div id="tensmallCircle"> </div>
+					<div id="tenbar" class="bar"> </div>
+				</div>
+
+				<div class= "period rotator">
+					<div id="periodbigCircle"> </div>
+					<div id="periodsmallCircle"> </div>
+				</div>
+
+				<div class= "qm rotator">
+					<div id="qmbigCircle"> </div>
+					<div id="qmsmallCircle"> </div>
+					<div id="qmspace"> </div>
+					<div id="qmstem"> </div>
+					<div id="qmbar" class="bar"> </div>
+				</div>
+
+				<div class= "em rotator">
+					<div id="emstem"> </div>
+					<div id="embar" class="bar"> </div>
+				</div>
+
+				<div class= "comma rotator">
+					<div id="comma" class="bar"> </div>
+				</div>
+
+				<div class= "bunnieearleft rotator">
+					<div id="bunnieearleftbar"> </div>
+					<div id="bunnieearleftbar2"> </div>
+					<div id="bunnieearleftspace"> </div>
+					<div id="bunnieearleftspacetop" class="bar"> </div>
+				</div>
+
+				<div class= "bunnieearright rotator">
+					<div id="bunnieearrightbar"> </div>
+					<div id="bunnieearrightbar2"> </div>
+					<div id="bunnieearrightspace"> </div>
+					<div id="bunnieearrightspacetop" class="bar"> </div>
+
+				</div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

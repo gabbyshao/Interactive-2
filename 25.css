@@ -1,16 +1,83 @@
-* {
-	box-sizing: border-box;
+body {
+	font-family:  sans-serif;
+	line-height: 1.5em;
+	background-color: yellow;
+	font-family: avenir;
+
+}
+.interactive{
+	font-size: 2.5em;
+	line-height: 1em;
+	font-family: avenir;
+  font-weight: bold;
+	color: #5A0AAA;
+	margin-top: 128px;
+	margin-left:245px;
+
 }
 
-body{
+.name{
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: bold;
+	color: #5A0AAA;
 
-	background:white;
-	font-family: sans-serif;
 }
 
-h1{
-	font-size: 6em;
-	float: right;
-	font-weight: 200;
-	text-decoration-line: underline;
+
+h1 {
+	text-align: left;
+	line-height: 83%;
+	font-size: 2em;
+	color: #5A0AAA;
+	margin-left: 43px;
+	margin-top: 352px;
+
+}
+
+h3 {
+font-size: 1.2em;
+line-height: 1em;
+color: black;
+}
+
+#title{
+	line-height: 2em;
+}
+
+#Exercises {
+font-size: 1em;
+line-height: 1em;
+color: black;
+margin-left:593px;
+margin-top: 0px;
+
+}
+
+#Project {
+font-size: 1em;
+line-height: 1em;
+color: black;
+margin-left:593px;
+margin-top: 154px;
+}
+
+
+a {
+	font-weight: bold;
+	color: #5A0AAA;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color:#5A0AAA;
+}
+
+ul {
+	list-style: none;
+	margin-left: -58px;
+}
+
+ul li {
+	color: #CCC;
 }
