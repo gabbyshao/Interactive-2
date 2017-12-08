@@ -5,6 +5,12 @@ body {
 	font-family: avenir;
 
 }
+
+#background{
+	weight:500px;
+	margin-left: 200px;
+}
+
 .interactive{
 	font-size: 2.5em;
 	line-height: 1em;
