@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+width: 800px;
+height: 556px;
+margin-left:120px;
+margin-top:100px;
+background:;
+font-family: futura;
+position:absolute;
+}
+
+#Text{
+	color:#FF595D;
+	font-size: 20px;
+	padding: 5px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 19px;
+}
+
+h4 {
+	font-size: 15px;
+	width:70%;
+}
+
+#description{
+	font-size: 10px;
+}
+
+#colorpalette{
+	color:#FF595D;
+	font-size: 20px;
+	padding: 5px;
+}
+
+#Grid{
+		color:#FF595D;
+		font-size: 20px;
+		padding: 5px;
+}
+
+#grid{
+	margin-left: -121px;
+}
+
+#bt{
+		color:#FF595D;
+		font-size: 20px;
+		padding: 5px;
+}
+
+#slider{
+		color:#FF595D;
+		font-size: 20px;
+		padding: 5px;
+}
+
+#loading,#Carrousel,#Calender,#Form,#Past,#SM,#SW,#GW1,#GW2,#GM1,#GM2{
+		color:#FF595D;
+		font-size: 20px;
+		padding: 5px;
+}
+
+#gw1{
+	margin-left: -121px;
+}
+
+#gw2{
+	margin-left: -121px;
+}
