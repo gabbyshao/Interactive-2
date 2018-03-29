@@ -12,6 +12,13 @@ font-family: futura;
 position:absolute;
 }
 
+#Name{
+	color:#FF595D;
+	font-size: 20px;
+	margin-left: -200px;
+}
+
+
 #Text{
 	color:#FF595D;
 	font-size: 20px;
@@ -67,7 +74,7 @@ h4 {
 		padding: 5px;
 }
 
-#loading,#Carrousel,#Calender,#Form,#Past,#SM,#SW,#GW1,#GW2,#GM1,#GM2{
+#loading,#Carrousel,#Calender,#Form,#Past,#SM,#SW,#GW1,#GW2,#GM1,#GM2,#BIGNAME{
 		color:#FF595D;
 		font-size: 20px;
 		padding: 5px;
